@@ -9,3 +9,9 @@ php artisan make:test ProjectTest
 ```bash
 php artisan test
 ```
+## github comment 
+
+```bash
+git reset --hard
+```
+
