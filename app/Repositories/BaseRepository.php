@@ -29,6 +29,7 @@ abstract class BaseRepository
         return $obj->update($data);
     }
 
+
     public function delete($obj)
     {
         return $obj->delete();
