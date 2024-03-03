@@ -19,6 +19,8 @@ class ProjectController extends Controller
     {
         $projects = $this->projectRepository->searchAndFilter($request);
         $projectsFilter = $this->projectRepository->projectFilters();
+
+
         if ($request->ajax()) {
             return view('Projects.search', compact('projects'))->render();
         }

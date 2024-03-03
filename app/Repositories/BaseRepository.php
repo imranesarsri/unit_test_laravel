@@ -24,14 +24,15 @@ abstract class BaseRepository
         return $this->model->create($data);
     }
 
-    public function update(Model $model, array $data)
+    public function update($obj, array $data)
     {
-        return $model->update($data);
+        return $obj->update($data);
     }
 
-    public function delete(Model $model)
+
+    public function delete($obj)
     {
-        return $model->delete();
+        return $obj->delete();
     }
 
     public function searchAndFilter(Request $request)
