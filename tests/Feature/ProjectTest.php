@@ -31,9 +31,10 @@ class ProjectTest extends TestCase
     //  test home page
     public function test_home_page(): void
     {
-        $response = $this->get('/pou');
-        dd($response->getStatusCode());
-        // $response->assertStatus(200);
+        $response = $this->get('/');
+        // $response = $this->put('/tasks/destroy');
+        // dd($response->getStatusCode());
+        $response->assertStatus(200);
     }
 
     // //  test projects page

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Repositories\ProjectRepository;
 use App\Repositories\TaskRepository;
@@ -28,3 +29,5 @@ Route::get('task/{id}', [TaskController::class, 'index'])->name('task');
 // Route::fallback(function () {
 //     return view('Layouts.Error404');
 // });
+
+Route::get('category/index', [CategoryController::class, 'index']);
