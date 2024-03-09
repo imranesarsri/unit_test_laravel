@@ -2,7 +2,7 @@
 ___
 ## Creating Tests
 ```bash
-php artisan make:test ProjectTest
+php artisan make:test TaskTest
 ```
 ___
 ## Running Tests
@@ -10,13 +10,15 @@ ___
 php artisan test
 php artisan test ./tests/
 php artisan test ./tests/feature
-php artisan test ./tests/feature/ProjectTest.php
+php artisan test ./tests/feature/TaskTest.php
+php artisan test ./tests/feature/TaskTest.php --filter=test_home_page
 ```
 ```bash
 .\vendor\bin\phpunit
 .\vendor\bin\phpunit ./tests/
 .\vendor\bin\phpunit ./tests/feature
-.\vendor\bin\phpunit ./tests/feature/ProjectTest.php
+.\vendor\bin\phpunit ./tests/feature/TaskTest.php
+.\vendor\bin\phpunit ./tests/feature/TaskTest.php --filter=test_home_page
 ```
 ___
 ## Methodes
